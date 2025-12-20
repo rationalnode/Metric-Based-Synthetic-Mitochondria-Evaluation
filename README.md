@@ -5,6 +5,10 @@
 
 A quantitative evaluation of a synthetic mitochondria dataset using segmentation metrics derived from a U-Net model trained on fully synthetic data and tested on real-world samples.
 
+- Get Dataset from [Mitochondria EM Segmentation - Synthetic Dataset](https://www.kaggle.com/datasets/iabdullahali/mitochondria-em-segmentation-synthetic-dataset/data)
+- This notebook was created using [Google Colab](https://colab.google/), so they maybe not appear on Github due to ```Add 'state' to each, or remove 'metadata.widgets'``` Error.
+
+
 ## Dataset Sample Preview
 
 ### Training Set (Synthetic)
