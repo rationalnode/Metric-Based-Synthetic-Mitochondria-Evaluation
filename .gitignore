@@ -1,0 +1,11 @@
+# Folders
+data_source/
+dataset/
+pth/
+
+# Keep Folder without Files
+training_sequence/*
+!training_sequence/.gitkeep
+
+# Files
+training_results.json
