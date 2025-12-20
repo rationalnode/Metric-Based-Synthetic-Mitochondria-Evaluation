@@ -2,10 +2,7 @@
 data_source/
 dataset/
 pth/
-
-# Keep Folder without Files
-training_sequence/*
-!training_sequence/.gitkeep
+training_sequence/
 
 # Files
 training_results.json

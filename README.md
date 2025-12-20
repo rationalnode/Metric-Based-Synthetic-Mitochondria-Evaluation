@@ -9,19 +9,19 @@ A quantitative evaluation of a synthetic mitochondria dataset using segmentation
 
 ### Training Set (Synthetic)
 
-<img src="images/training_set.png" width="70%">
+<img src="images/training_set.jpg" width="70%">
 
 ### Validation Set (Synthetic)
 
-<img src="images/val_set.png" width="70%">
+<img src="images/val_set.jpg" width="70%">
 
 ### Test Set (Real)
 
-<img src="images/test_set.png" width="70%">
+<img src="images/test_set.jpg" width="70%">
 
 ## Traning Plot
 
-<img src="images/training_plot.png" width="40%">
+<img src="images/training_plot.jpg" width="40%">
 
 ## Defining Metrics
 
@@ -51,11 +51,10 @@ The trained model's performance is determined on the validation set & Test set, 
 - **Recall**: 0.9851 (std ± 0.0031)
 - **Accuracy**: 0.9971 (std ± 0.0003)
 
-<img src="images/val_metrics.png" width="50%">
+<img src="images/val_metrics.jpg" width="50%">
 
-```
-It is worth noting that the validation data is also synthetic, which naturally reduces domain variability and can make the task easier. Consequently, while these results are very strong, additional evaluation on real-world or out-of-distribution data is essential to fully assess generalization performance.
-```
+> It is worth noting that the validation data is also synthetic, which naturally reduces domain variability and can make the task easier. Consequently, while these results are very strong, additional evaluation on real-world or out-of-distribution data is essential to fully assess generalization performance.
+
 
 ## Training Evalution Metrics on Test Set
 
@@ -66,19 +65,17 @@ It is worth noting that the validation data is also synthetic, which naturally r
 - **Recall**: 0.9322 ± 0.0389
 - **Accuracy**: 0.9345 ± 0.0079
 
-<img src="images/test_metrics.png" width="50%">
+<img src="images/test_metrics.jpg" width="50%">
 
-```
-On the real-world EM test set, the model shows very high recall (0.93) but low precision (0.39), leading to moderate Dice (0.54) and low IoU (0.38). This indicates that the model detects most mitochondria pixels (few false negatives) but also predicts many non-mitochondria pixels as mitochondria (many false positives). The relatively high accuracy (0.93) is misleading in this context, as it is likely dominated by background pixels, which are abundant in EM images. The large standard deviations further suggest unstable performance across the very small test set (5 images), indicating sensitivity to image-specific characteristics.
-```
+> On the real-world EM test set, the model shows very high recall (0.93) but low precision (0.39), leading to moderate Dice (0.54) and low IoU (0.38). This indicates that the model detects most mitochondria pixels (few false negatives) but also predicts many non-mitochondria pixels as mitochondria (many false positives). The relatively high accuracy (0.93) is misleading in this context, as it is likely dominated by background pixels, which are abundant in EM images. The large standard deviations further suggest unstable performance across the very small test set (5 images), indicating sensitivity to image-specific characteristics.
 
 ## Test Set - Prediction on Real World EM Mitochondria Images
 
-<img src="images/test_results.png" width="100%">
+<img src="images/test_results.jpg" width="100%">
 
 ## Probability Analysis of Prediction
 
-<img src="images/probability_analysis.png" width="80%">
+<img src="images/probability_analysis.jpg" width="80%">
 
 ## Overall Interpretation:
 The stark contrast between the near-perfect validation performance on synthetic data and the much poorer test performance on real data is a classic case of domain shift. The model has effectively learned the statistical properties, textures, contrast, and noise patterns of the synthetic EM images, which are consistent across training and validation, resulting in extremely high metrics and low variance. However, real EM images differ substantially in terms of acquisition noise, staining variability, structural complexity, and artifacts that are not fully captured by the synthetic generator. Consequently, when evaluated on real data, the model over-segments mitochondria, inflating recall while severely degrading precision, IoU, and Dice. This gap is amplified by the very small real-world test set, which increases metric variance and reduces robustness. Overall, the results indicate strong performance within the synthetic domain but limited generalization to real data.
