@@ -9,19 +9,19 @@ A quantitative evaluation of a synthetic mitochondria dataset using segmentation
 
 ### Training Set (Synthetic)
 
-<img src="images/training_set.jpg" width="70%">
+<img src="images/training_set.jpg" width="100%">
 
 ### Validation Set (Synthetic)
 
-<img src="images/val_set.jpg" width="70%">
+<img src="images/val_set.jpg" width="100%">
 
 ### Test Set (Real)
 
-<img src="images/test_set.jpg" width="70%">
+<img src="images/test_set.jpg" width="100%">
 
 ## Traning Plot
 
-<img src="images/training_plot.jpg" width="40%">
+<img src="images/training_plot.jpg" width="50%">
 
 ## Defining Metrics
 
@@ -51,7 +51,7 @@ The trained model's performance is determined on the validation set & Test set, 
 - **Recall**: 0.9851 (std ± 0.0031)
 - **Accuracy**: 0.9971 (std ± 0.0003)
 
-<img src="images/val_metrics.jpg" width="50%">
+<img src="images/val_metrics.jpg" width="70%">
 
 > It is worth noting that the validation data is also synthetic, which naturally reduces domain variability and can make the task easier. Consequently, while these results are very strong, additional evaluation on real-world or out-of-distribution data is essential to fully assess generalization performance.
 
@@ -65,7 +65,7 @@ The trained model's performance is determined on the validation set & Test set, 
 - **Recall**: 0.9322 ± 0.0389
 - **Accuracy**: 0.9345 ± 0.0079
 
-<img src="images/test_metrics.jpg" width="50%">
+<img src="images/test_metrics.jpg" width="70%">
 
 > On the real-world EM test set, the model shows very high recall (0.93) but low precision (0.39), leading to moderate Dice (0.54) and low IoU (0.38). This indicates that the model detects most mitochondria pixels (few false negatives) but also predicts many non-mitochondria pixels as mitochondria (many false positives). The relatively high accuracy (0.93) is misleading in this context, as it is likely dominated by background pixels, which are abundant in EM images. The large standard deviations further suggest unstable performance across the very small test set (5 images), indicating sensitivity to image-specific characteristics.
 
