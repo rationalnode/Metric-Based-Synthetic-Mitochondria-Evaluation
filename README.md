@@ -8,6 +8,25 @@ A quantitative evaluation of a synthetic mitochondria dataset using segmentation
 - Get Dataset from [Mitochondria EM Segmentation - Synthetic Dataset](https://www.kaggle.com/datasets/iabdullahali/mitochondria-em-segmentation-synthetic-dataset/data)
 - The notebooks were created using [Google Colab](https://colab.google/), so they maybe not appear on Github due to ```Add 'state' to each, or remove 'metadata.widgets'``` Error.
 
+## About Dataset
+
+### **Synthetic Mitochondria Dataset**
+
+This dataset contains a set of procedurally generated mitochondria images intended for use in various machine learning and image processing applications. The dataset features a collection of 1,000 synthetic images, created as part of an experiment to assess the feasibility and quality of synthetic dataset generation.
+
+Image from [Mitochondria Dataset](https://www.kaggle.com/datasets/amerjabban/mitochondria-dataset) were used as Reference
+
+### **Dataset Details:**
+
+**Training Set**: The training set consists of 1,000 images along with Binary Masks (Segmentation), all procedurally generated using advanced image creation software. The dataset was constructed using *Substance Designer*, which is a powerful material and texture creation tool.
+
+**Original Images**: The five images in the training test set are based on actual Electron Microscopy (EM) images of mitochondria, sourced from [Mitochondria Dataset](https://www.kaggle.com/datasets/amerjabban/mitochondria-dataset).
+
+**Procedural Generation**: The synthetic images were generated using procedural techniques. This approach offers high flexibility and allows for the creation of realistic yet diverse mitochondria images without needing to rely on traditional imaging methods.
+
+**Automation Tools**: The image generation process was automated using Unity in combination with the Substance plugin, which utilizes an SBSAR file for dynamic material generation and customization.
+
+**Objective**: The primary objective was to test the feasibility and quality of automated image creation techniques for generating high-quality synthetic mitochondria data for training machine learning models. This dataset is a proof-of-concept, and as such, only 1,000 images were generated to test the workflow.
 
 ## Dataset Sample Preview
 
