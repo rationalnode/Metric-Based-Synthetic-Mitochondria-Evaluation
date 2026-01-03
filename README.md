@@ -68,11 +68,11 @@ The trained model's performance is determined on the validation set & Test set, 
 ## Training Evalution Metrics on Validation Set
 
 ### Validation Metrics (mean ± std):
-- **IoU**: 0.9716 (std ± 0.0035)
-- **Dice**: 0.9851 (std ± 0.0018)
-- **Precision**: 0.9861 (std ± 0.0029)
-- **Recall**: 0.9851 (std ± 0.0031)
-- **Accuracy**: 0.9971 (std ± 0.0003)
+- **IoU**: 0.9716 ± 0.0035
+- **Dice**: 0.9851 ± 0.0018
+- **Precision**: 0.9861 ± 0.0029
+- **Recall**: 0.9851 ± 0.0031
+- **Accuracy**: 0.9971 ± 0.0003
 
 <img src="images/val_metrics.jpg" width="70%">
 
