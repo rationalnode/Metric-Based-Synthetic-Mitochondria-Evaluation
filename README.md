@@ -18,15 +18,15 @@ Image from [Mitochondria Dataset](https://www.kaggle.com/datasets/amerjabban/mit
 
 ### **Dataset Details:**
 
-**Training Set**: The training set consists of 1,000 images along with Binary Masks (Segmentation), all procedurally generated using advanced image creation software. The dataset was constructed using *Substance Designer*, which is a powerful material and texture creation tool.
+* **Training Set**: The training set consists of 1,000 images along with Binary Masks (Segmentation), all procedurally generated using advanced image creation software. The dataset was constructed using *Substance Designer*, which is a powerful material and texture creation tool.
 
-**Original Images**: The five images in the training test set are based on actual Electron Microscopy (EM) images of mitochondria, sourced from [Mitochondria Dataset](https://www.kaggle.com/datasets/amerjabban/mitochondria-dataset).
+* **Original Images**: The five images in the training test set are based on actual Electron Microscopy (EM) images of mitochondria, sourced from [Mitochondria Dataset](https://www.kaggle.com/datasets/amerjabban/mitochondria-dataset).
 
-**Procedural Generation**: The synthetic images were generated using procedural techniques. This approach offers high flexibility and allows for the creation of realistic yet diverse mitochondria images without needing to rely on traditional imaging methods.
+* **Procedural Generation**: The synthetic images were generated using procedural techniques. This approach offers high flexibility and allows for the creation of realistic yet diverse mitochondria images without needing to rely on traditional imaging methods.
 
-**Automation Tools**: The image generation process was automated using Unity in combination with the Substance plugin, which utilizes an SBSAR file for dynamic material generation and customization.
+* **Automation Tools**: The image generation process was automated using Unity in combination with the Substance plugin, which utilizes an SBSAR file for dynamic material generation and customization.
 
-**Objective**: The primary objective was to test the feasibility and quality of automated image creation techniques for generating high-quality synthetic mitochondria data for training machine learning models. This dataset is a proof-of-concept, and as such, only 1,000 images were generated to test the workflow.
+* **Objective**: The primary objective was to test the feasibility and quality of automated image creation techniques for generating high-quality synthetic mitochondria data for training machine learning models. This dataset is a proof-of-concept, and as such, only 1,000 images were generated to test the workflow.
 
 ## Dataset Sample Preview
 
