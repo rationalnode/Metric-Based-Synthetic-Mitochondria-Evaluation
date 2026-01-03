@@ -25,7 +25,7 @@ A quantitative evaluation of a synthetic mitochondria dataset using segmentation
 
 ## Traning Plot
 
-<img src="images/training_plot.jpg" width="50%">
+<img src="images/training_plot.jpg" width="60%">
 
 ## Defining Metrics
 
@@ -79,7 +79,7 @@ The trained model's performance is determined on the validation set & Test set, 
 
 ## Probability Analysis of Prediction
 
-<img src="images/probability_analysis.jpg" width="80%">
+<img src="images/probability_analysis.jpg" width="100%">
 
 ## Overall Interpretation:
 The stark contrast between the near-perfect validation performance on synthetic data and the much poorer test performance on real data is a classic case of domain shift. The model has effectively learned the statistical properties, textures, contrast, and noise patterns of the synthetic EM images, which are consistent across training and validation, resulting in extremely high metrics and low variance. However, real EM images differ substantially in terms of acquisition noise, staining variability, structural complexity, and artifacts that are not fully captured by the synthetic generator. Consequently, when evaluated on real data, the model over-segments mitochondria, inflating recall while severely degrading precision, IoU, and Dice. This gap is amplified by the very small real-world test set, which increases metric variance and reduces robustness. Overall, the results indicate strong performance within the synthetic domain but limited generalization to real data.
